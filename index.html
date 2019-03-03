@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Barlow|Comfortaa|Encode+Sans+Condensed|Inconsolata|Jura|Kosugi+Maru|Nanum+Gothic|Poppins|Quicksand|Roboto|Roboto+Mono|Rokkitt"
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Comfortaa|Encode+Sans+Condensed|Inconsolata|Jura|Roboto+Mono|Kosugi+Maru|Nanum+Gothic|Poppins|Quicksand|Roboto|Roboto+Mono|Rokkitt"
     rel="stylesheet">
     <title>My Portfolio</title>
   </head>
@@ -22,20 +22,20 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              <!-- <li class="nav-item text-center active">
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li> -->
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -43,28 +43,32 @@
       </nav>
     <section>
       <div class="container-fluid sections">
-        <div class="row section-about">
+        <div class="row" id="about">
         <div class="container">
-        <div class="col-sm-12 col-lg-12 content-bg text-center">
-          <h1 class="avatar"></h1>
-          <p>My name is Shabnam. I'm a junior front-end developer living in Montreal, Canada. <br />I have a passion for creating and designing websites.</p>
-          <p>I like to keep it simple. <br />My favorite type is minimalism in almost every aspects of my life!</p>
-          <p>As a junior front-end developer I can create and design responsive websites using.</p>
-          <p>I like to keep it simple. <br />My favorite type is minimalism in almost every aspects of my life! <br />Feel free too take a look at my website!</p>
+        <div class="col-sm-12 col-lg-12 content-bg text-center avatar-section">
+          <!-- <h1 class="avatar"></h1> -->
+          <img class="avatar" src="images/8biticon.jpg" alt="">
+          <h4>Hey Folks!</h4>
+          <p>My name is Shabnam. I'm a junior front-end developer living in Montreal, Canada. <br />I have a passion for building & designing websites & web apps.</p>
+          <p>I mostly consider myself as a self-taught developer, however I have a diploma in web development from Concordia university.</p>
+          <p>Feel free too take a look at my portfolio website & hire me!:)</p>
         </div>
       </div>
       </div>
-        <div class="row section-skills">
+        <div class="row" id="skills">
         <div class="container">
         <div class="col-sm-12 col-lg-12 content-bg">
           <h1>Skills</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, optio, vel nulla tempore sit molestias necessitatibus ex inventore rerum dolor voluptatem maxime, modi sunt in voluptatum nobis nisi beatae quae!</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, optio, vel nulla tempore sit molestias necessitatibus ex inventore rerum dolor voluptatem maxime, modi sunt in voluptatum nobis nisi beatae quae!</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, optio, vel nulla tempore sit molestias necessitatibus ex inventore rerum dolor voluptatem maxime, modi sunt in voluptatum nobis nisi beatae quae!</p>
+          <p>Web technologies I can work with:</p>
+          <p>HTML5 | CSS | SASS | Bootstrap | Materialize CSS</p>
+          <p>JavaScript(+ES6) | JSON | AJAX | Fetch API | Rest API | Vue.js</p>
+          <p>DataBase: Firebase | MySQL</p>
+          <p>Git | Github</p>
+          <p>I'm also interested in learning React, accessibility, Node.js, MongoDB & GraphQL for the future;)</p>
         </div>
       </div>
       </div>
-        <div class="row section-projects">
+        <div class="row" id="projects">
         <div class="container">
         <div class="col-sm-12 col-lg-12 content-bg">
           <h1>Projects</h1>
@@ -74,17 +78,63 @@
         </div>
       </div>
       </div>
+        <div class="row" id="contact">
+        <div class="container content-bg">
+        <div class="col-sm-12 col-lg-6">
+          <h1>Contact Me</h1>
+          <p>Shab.k.web [at] gmail [dot] com</p>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <a href="https://twitter.com/_manbash" class="btn-floating tooltipped" data-position="bottom"
+          data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+
+        <a href="https://ca.linkedin.com/in/shabnamkimiai" class="btn-floating tooltipped" data-position="bottom"
+          data-tooltip="Instagram">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        </div>
+      </div>
+      </div>
 
       </div>
      </section>
     <!-- Footer -->
-    <footer class="section footer-dark bg-dark center">
+    <!-- <footer class="section footer-dark bg-dark center">
       <div class="container text-center">
         <i class="far fa-copyright"></i> Made With
         <i class="fas fa-heart" style="color:#f06292 "></i>
         By <a lass="footer-link" href="https://twitter.com/_manbash">Shabnam</a>
       </div>
-    </footer>
+    </footer> -->
+    <footer class="page-footer bg-darker center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 sm-12">
+              <h2 class="white-text contacts">Contact Me:</h2>
+            </div>
+            <div class="col-lg-4 sm-12">
+              <p class="white-text contacts">Shab.k.web [at] gmail [dot] com</p>
+            </div>
+                <div class="col lg-4 sm-12">
+                  <a href="https://twitter.com/_manbash" class="btn-floating tooltipped" data-position="bottom"
+                    data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+          
+                  <a href="https://ca.linkedin.com/in/shabnamkimiai" class="btn-floating tooltipped" data-position="bottom"
+                    data-tooltip="Instagram">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <!-- <a href="#" class="btn-floating  tooltipped" data-position="bottom"
+                    data-tooltip="LinkedIn"><i class="far fa-envelope fa-3x"></i></a> -->
+                </div>
+       
+            
+          </div>
+        </div>
+        <div class="footer-copyright footer-dark bg-dark text-center">
+          <div class="container center-align"><i class="far fa-copyright"></i> Made With <i class="fas fa-heart" style="color:#a5043a "></i>
+            By Shabnam</div>
+        </div>
+      </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
