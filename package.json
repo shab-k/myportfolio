@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d my-portfolio"
+    "deploy": "gh-pages -d dist"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "homepage": "https://shab-k.github.io/myportfolio",
