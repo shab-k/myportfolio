@@ -1,254 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 242, 250);
+  font-family: "Roboto Mono", monospace;
+}
 .top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    cursor: pointer;
-    padding: 15px;
-  }
-  
-   .gradient-45deg-purple-deep-orange {
-      background: #8e24aa;
-      background: -webkit-linear-gradient(45deg, #8e24aa 0%, #ff6e40 100%);
-      background: linear-gradient(45deg, #8e24aa 0%, #ff6e40 100%);
-      background-image: linear-gradient(to right bottom, #8f2afd, #8a53ed, #8a6cda, #8e80c2, #9591a8);
-      background-image: linear-gradient(to right bottom, #fd2a2a, #e57900, #bca900, #85ce3d, #13eb96);
-      background-image: linear-gradient(to right bottom, #fd2a2a, #a05300, #524e00, #223815, #181c1a);
-      background-image: linear-gradient(to right bottom, #fd2a2a, #f90057, #e00082, #b100aa, #5b2cc8);
-      }
-  .gradient-45deg-light-blue-cyan {
-      background-image: linear-gradient(to right bottom, #2afda1, #00dddc, #00b6ff, #0083ff, #431ef2);
-      }
-      .gradient-45deg-facebook {
-        background-image: linear-gradient(to right bottom, #051937, #00275f, #003589, #0042b4, #0f4ee0);
-        }
-        .gradient-45deg-tumblr {
-            background-image: linear-gradient(to right top, #0bde1f, #00cda9, #00b1ff, #0084ff, #8c0fe0);
-            }
-        .gradient-45deg-good {
-            background-image: linear-gradient(to right, #6e4703, #885604, #a46606, #c17509, #e0850f);
-            }
-      
-        .gradient-45deg-linked {
-            background-image: linear-gradient(to right, #032f6e, #00398d, #0044ac, #004ecd, #1557ed);
-            }
-      
-  .gradient-s-e-m {
-    background-image: linear-gradient(to right top, #051937, #00446b, #00769d, #00abc9, #12e3eb);
-  }
-  /* h2.keep-in {
-    font-size: 3.5rem;
-    background-image: linear-gradient(to right top, #051937, #00446b, #00769d, #00abc9, #12e3eb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-     margin-top: 5px;
-  } */
-/* --------------------------------------------- TIMELINE style-------------------------------------------- */
-  /* * {
-      box-sizing: border-box;
-  }  */
-  
-  body {
-      background-color: rgb(248, 242, 250);
-      font-family: 'Roboto Mono', monospace;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-      position: relative;
-      //max-width: 1200px;
-      margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-      content: '';
-      position: absolute;
-      width: 2px;
-      background-color: rgb(85, 83, 83);
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
-  }
-  
-  /* Title - Container around content */
-  .time-line {
-      color: #880c88;
-      font-size: 2.2rem;
-  }
-  .box {
-      padding: 10px 40px;
-      position: relative;
-      background-color: inherit;
-      width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .box::after {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      right: -9px;
-      background-color: rgb(110, 13, 148);
-      //border: 4px solid rgb(158, 39, 212);
-      top: 17px;
-      border-radius: 50%;
-      z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left-box {
-      left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right-box {
-      left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left-box::before {
-      content: " ";
-      height: 20;
-      position: absolute;
-      top: 22px;
-      width: 0;
-      z-index: 1;
-      right: 30px;
-      border: medium solid white;
-      border-width: 10px 0 10px 10px;
-      border-color: transparent transparent transparent white;
-      
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right-box::before {
-      content: " ";
-      height: 20;
-      position: absolute;
-      top: 22px;
-      width: 0;
-      z-index: 1;
-      left: 30px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right-box::after {
-      left: -12px;
-  }
-  
-  /* The actual content */
-  .content {
-      padding: 20px 30px;
-      background-color: rgb(252, 248, 248);
-      position: relative;
-      border-radius: 10px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-    /* Place the timelime to the left */
-    .timeline::after {
-      left: 31px;
-    }
-    
-    /* Full-width containers */
-    .box {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-    
-    /* Make sure that all arrows are pointing leftwards */
-    .box::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-    /* Make sure all circles are at the same spot */
-    .left-box::after, .right-box::after {
-      left: 20px;
-    }
-    
-    /* Make all right containers behave like the left ones */
-    .right-box {
-      left: 0%;
-    }
-  } 
-  /* --------------------------------------------------- End of timeline ---------------------------------------------- */
-  
-  
-      nav .brand-logo {
-      position: absolute;
-      color: #fff;
-      display: inline-block;
-      font-size: 1.7rem;
-      padding: 0;
-  }
-      header {
-        background-image: linear-gradient(to right bottom, #591c73, #4d509a, #4e7ab2, #6ea0c0, #a2c2cd);
-        background-size: cover;
-        background-position: center;
-        min-height: 700px;
-      }
-      .contacts {
-        margin-bottom: 1.2rem;
-     }
-      @media screen and (max-width: 670px) {
-        header {
-          min-height: 500px;
-        }
-        nav .brand-logo {
-          font-size: 1.35rem;
-  
-  }
-        .h2-header, .h2-head {
-          text-align: center;
-        }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 15px;
+}
+.gradient-45deg-purple-deep-orange {
+  background: #8e24aa;
+  background: -webkit-linear-gradient(45deg, #8e24aa 0%, #ff6e40 100%);
+  background: linear-gradient(45deg, #8e24aa 0%, #ff6e40 100%);
+  background-image: linear-gradient(
+    to right bottom,
+    #fd2a2a,
+    #f90057,
+    #e00082,
+    #b100aa,
+    #5b2cc8
+  );
+}
+.gradient-45deg-light-blue-cyan {
+  background-image: linear-gradient(
+    to right bottom,
+    #2afda1,
+    #00dddc,
+    #00b6ff,
+    #0083ff,
+    #431ef2
+  );
+}
+.gradient-45deg-facebook {
+  background-image: linear-gradient(
+    to right bottom,
+    #051937,
+    #00275f,
+    #003589,
+    #0042b4,
+    #0f4ee0
+  );
+}
+.gradient-45deg-tumblr {
+  background-image: linear-gradient(
+    to right top,
+    #0bde1f,
+    #00cda9,
+    #00b1ff,
+    #0084ff,
+    #8c0fe0
+  );
+}
+.gradient-45deg-good {
+  background-image: linear-gradient(
+    to right,
+    #6e4703,
+    #885604,
+    #a46606,
+    #c17509,
+    #e0850f
+  );
+}
 
-        h2.keep-in {
-            font-size: 2.5rem;
-          }
-     
-      
-      }
-  
-  /* End of media query */
-      .section {
-        padding-top: 4vw;
-        padding-bottom: 4vw;
-      }
-  
-   
-      .tabs .indicator {
-        background-color: #1a237e;
-      }
-  
-      .tabs .tab a:focus,
-      .tabs .tab a:focus.active {
-        background: transparent;
-      }
-  
-    .nav-wrapper {
-      font-family: 'Comfortaa', cursive;
-    }
-    #header-avatar {
-      padding-top:105px;
-    }
-  .avatar {
-      border-radius: 50%;
-      width:24rem;
-    height: 24rem;  
+.gradient-45deg-linked {
+  background-image: linear-gradient(
+    to right,
+    #032f6e,
+    #00398d,
+    #0044ac,
+    #004ecd,
+    #1557ed
+  );
+}
+
+.gradient-s-e-m {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #00446b,
+    #00769d,
+    #00abc9,
+    #12e3eb
+  );
+}
+/* -------------------------- TIMELINE style ------------------------ */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: rgb(85, 83, 83);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Title - Container around content */
+.time-line {
+  color: #880c88;
+  font-size: 2.2rem;
+}
+.box {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/* The circles on the timeline */
+.box::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -9px;
+  background-color: rgb(110, 13, 148);
+  top: 17px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-box {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-box {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-box::before {
+  content: " ";
+  height: 20;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-box::before {
+  content: " ";
+  height: 20;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-box::after {
+  left: -12px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgb(252, 248, 248);
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
   }
-  
-  .h2-head{
-      font-size: 1.2rem;
-      font-family: 'Roboto Mono', monospace;
+
+  /* Full-width containers */
+  .box {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .box::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-box::after,
+  .right-box::after {
+    left: 20px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-box {
+    left: 0%;
+  }
+}
+/* ---------------------------- End of timeline -------------------------- */
+nav .brand-logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.7rem;
+  padding: 0;
+}
+header {
+  background-image: linear-gradient(
+    to right bottom,
+    #591c73,
+    #4d509a,
+    #4e7ab2,
+    #6ea0c0,
+    #a2c2cd
+  );
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+}
+.contacts {
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 670px) {
+  header {
+    min-height: 500px;
+  }
+  nav .brand-logo {
+    font-size: 1.35rem;
+  }
+  .h2-header,
+  .h2-head {
+    text-align: center;
+  }
+
+  h2.keep-in {
+    font-size: 2.5rem;
+  }
+}
+
+/* End of media query */
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+.tabs .indicator {
+  background-color: #1a237e;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background: transparent;
+}
+
+.nav-wrapper {
+  font-family: "Comfortaa", cursive;
+}
+#header-avatar {
+  padding-top: 105px;
+}
+.avatar {
+  border-radius: 50%;
+  width: 24rem;
+  height: 24rem;
+}
+
+.h2-head {
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+}
