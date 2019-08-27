@@ -43,10 +43,19 @@ h1,h2,h3,h4 {
     padding: 30px;
 }
 .card {
-    margin: 5px;
+    margin: 10px 0;
     padding: 10px;
     background-color: transparent;
-    border: none;
+    border: 3px dashed #4e4142;
+}
+.p-one{
+    padding-bottom: 55px;
+}
+/* .p-two{
+    padding-top: 10px;
+} */
+.p-four{
+    padding-bottom: 55px;
 }
 .card-title {
     color: #0093B7;
