@@ -51,11 +51,8 @@ h1,h2,h3,h4 {
 .p-one{
     padding-bottom: 55px;
 }
-/* .p-two{
-    padding-top: 10px;
-} */
 .p-four{
-    padding-bottom: 55px;
+    padding-bottom: 40px;
 }
 .card-title {
     color: #0093B7;
