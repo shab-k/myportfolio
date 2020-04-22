@@ -1,186 +1,255 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Jura|Roboto+Mono" rel="stylesheet">
-    <title>My Portfolio</title>
-  </head>
-  <body>
-      <!-- navbar -->
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font Awesome -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+    crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/51e4fc5aa2.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Jura|Roboto+Mono" rel="stylesheet">
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container-fluid sections">
+      <div class="row" id="about">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#projects" >Projects</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+          <div class="col-sm-12 col-lg-12 content-bg text-center avatar-section">
+            <img class="avatar" src="images/8biticon.jpg" alt="">
+            <h2>Hey Folks!</h2>
+            <p>My name is Shabnam. I'm a full-stack developer living in Montreal, Canada. <br />I have a great passion
+              for building & designing websites & web apps.<br />
+              I got a diploma in web development from Concordia university, but<br> I also learned a lot of things by
+              myself. I always enjoy learning new things.</p>
+            <p>My goal is to build nice, responsive & accessible
+              projects.
+              <br />I like keeping things simple, nice & neat.</p>
+            <p>Feel free to take a look at my portfolio & hire me!:)</p>
           </div>
         </div>
-      </nav>
-    <section>
-      <div class="container-fluid sections">
-        <div class="row" id="about">
+      </div>
+      <div class="row" id="skills">
         <div class="container">
-        <div class="col-sm-12 col-lg-12 content-bg text-center avatar-section">
-          <img class="avatar" src="images/8biticon.jpg" alt="">
-          <h2>Hey Folks!</h2>
-          <p>My name is Shabnam. I'm a full-stack developer living in Montreal, Canada. <br />I have a great passion for building & designing websites & web apps.<br />
-          I got a diploma in web development from Concordia university, but<br> I also learned a lot of things by myself. I always enjoy learning new things.</p>
-          <p>My favorite stack is MERN(or MEVN)stack.<br /> My goal is to build nice, responsive & accessible projects.
-            <br />I like to keep things simple, nice & neat.</p>
-          <p>Feel free to take a look at my portfolio & hire me!:)</p>
+          <div class="col-sm-12 col-lg-12 content-bg">
+            <h1 class="text-center">Skills</h1>
+            <p>Web technologies I can work with:</p>
+            <hr class="skills__line">
+            <p>HTML5 | CSS3 ( OOCSS & BEM ) | SASS | Accessibility</p>
+            <p>JavaScript(+ES6) | AJAX | JSON | Fetch API | REST API</p>
+            <p>Vue.js | React | Bootstrap | Materialize CSS</p>
+            <p>Babel | Webpack | Git | Github</p>
+            <p>Node | PHP | MySQL | Firebase</p>
+          </div>
         </div>
       </div>
-      </div>
-        <div class="row" id="skills">
+      <div class="row" id="projects">
         <div class="container">
-        <div class="col-sm-12 col-lg-12 content-bg">
-          <h1 class="text-center">Skills</h1>
-          <h5 class="text-center">Web technologies I can work with:</h5>
-          <br>
-          <p>Git | Github | Babel | Webpack</p>
-          <p>Node | Express | familiarity with PHP</p>
-          <p>DataBase: Firestore | MySQL | MongoDB</p>
-          <p>HTML5 | CSS | SASS | Bootstrap | Materialize CSS</p>
-          <p>JavaScript(+ES6) | React.js(+Redux) | Vue.js | JSON | AJAX | Fetch API | Rest API</p>
-          <p>I'm also interested in learning React Native, accessibility, Node.js, MongoDB & GraphQL for the future;)</p>
-        </div>
-      </div>
-      </div>
-        <div class="row" id="projects">
-        <div class="container">
-        <div class="col-sm-12 col-lg-12 content-bg">
+          <div class="col-sm-12 col-lg-12 content-bg">
             <h1 class="text-center">Projects</h1>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="card p-one">
-                          <div class="text-center">
-                            <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
-                          </div>
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Project-1</h5>
-                          <p class="card-text">I made my portfolio website(this site) using:</p>
-                          <p>HTML5 | Bootstrap</p>
-                          <p>Code:<a href="https://github.com/shab-k/myportfolio" class="contact-icon">Github</a></p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card p-two">
-                         <div class="text-center">
-                      <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
+
+              <div class="col-lg-6">
+                <div class="card p-seven">
+                  <!-- <div class="text-center">
+                    <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
+                  </div> -->
+                  <img class="card-img-top" src="images/resume_builder_screenshot.JPG" alt="Card image cap">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Resume Builder(CRUD)<span>(New)</span></h5>
+                    <!-- <p class="card-text">This responsive CRUD app is built with:</p> -->
+                    <p>HTML5 | CSS Grids + Flex + Media Queries | <br> Sass | Mysql | PHP</p>
+                    <!-- <button href="#" class="button-link" target="_blank" disabled>Live</button> -->
+                    <button type="button" class="button-link" data-toggle="tooltip" data-placement="bottom"
+                    title="shab.k.web [at] gmail">DB Files</button>
+                    <a href="https://github.com/shab-k/resume_builder" class="button-link" target="_blank">Github</a>
                   </div>
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Project-2</h5>
-                          <p class="card-text"><a href="https://blogit-69789.firebaseapp.com/" target="_blank">Blogit </a>is a CMS application for managing blog contents.</p>
-                          <p>Vue.js | Firebase(Hosting, database & authentication) | Materialize CSS</p>
-                          <p>Code:<a href="https://github.com/shab-k/blogit" class="contact-icon">Github</a></p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card">
-                         <div class="text-center">
-                      <!-- <i class="fas fa-calendar-times fa-4x" style="color:#51393C"></i> -->
-                      <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
-                  </div>
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Project-3</h5>
-                          <p class="card-text"><a href="https://bibliophile-8ffc8.firebaseapp.com/" target="_blank">Bibliophile</a>, which is a React app built with:</p>
-                          <p>React.js | Redux | Materialize | NYTimes Book API | Moment.js | Firebase | Firestore</p>
-                          <p>Code:<a href="https://github.com/shab-k/bibliophile" class="contact-icon">Github</a></p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card p-four">
-                         <div class="text-center">
-                      <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
-                  </div>
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Project-4</h5>
-                          <p class="card-text">I made <a href="/materialize-project/index.html" target="_blank">this</a> personal website using:</p>
-                          <p>HTML5 | Materialize CSS | JavaScript</p>
-                          <p>Code:<a href="https://github.com/shab-k/myportfolio/tree/master/dist/materialize-project" class="contact-icon">Github</a></p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card">
-                         <div class="text-center">
-                      <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
-                  </div>
-                        <div class="card-body text-center">
-                          <h5 class="card-title">Project-5</h5>
-                          <p class="card-text">I made a <a href="https://shab-k.github.io/myvuepress/blog/" target="_blank">Vuepress</a> blog using:</p>
-                          <p>Vue.js | Vuepress | Materialize CSS</p>
-                          <p>Code:<a href="https://github.com/shab-k/myvuepress" class="contact-icon">Github</a></p>
-                        </div>
-                      </div>
                 </div>
               </div>
+              <div class="col-lg-6">
+                <div class="card p-six">
+                  <div class="text-center">
+                    <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">WExperts<span>(New)</span></h5>
+                    <p class="card-text">This landing page which is <span>accessible</span>(still working on it) is built with:</p>
+                    <p>HTML5 | CSS(+ Flexbox + BEM + OOCSS) | Sass | Netlify(Hosting)</p>
+                    <br><br>
+                    <a href="https://blissful-clarke-d16757.netlify.com/" class="button-link" target="_blank">Live</a>
+                    <a href="https://github.com/shab-k/wexperts" class="button-link"
+                      target="_blank">Github</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card p-five">
+                  <div class="text-center">
+                    <!-- <i class="fas fa-calendar-times fa-4x" style="color:#51393C"></i> -->
+                    <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Bibliophile</h5>
+                    <p class="card-text">This React app is built with:</p>
+                    <p>React.js | Redux | Materialize | NYTimes Book API | Moment.js | Firebase | Firestore</p>
+                    <a href="https://bibliophile-8ffc8.firebaseapp.com/" class="button-link" target="_blank">Live</a>
+                    <a href="https://github.com/shab-k/bibliophile" class="button-link" target="_blank">Github</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card p-four">
+                  <div class="text-center">
+                    <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Blogit</h5>
+                    <p class="card-text">A CMS app for managing blogs built with:</p>
+                    <p>Vue.js | Firebase(Hosting, database & authentication) | Materialize CSS</p>
+                    <a href="https://blogit-69789.firebaseapp.com/" class="button-link" target="_blank">Live</a>
+                    <a href="https://github.com/shab-k/blogit" class="button-link" target="_blank">Github</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card p-three">
+                  <div class="text-center">
+                    <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">My Portfolio!</h5>
+                    <p class="card-text">I made my portfolio website using:</p>
+                    <p>HTML5 | Bootstrap</p>
+                    <!-- <p>Code:</p><i href="https://github.com/shab-k/myportfolio" class="project-icon"><i class="fab fa-github-square fa-3x" style="color: #0093B7"></i></i> -->
+                    <a href="https://shabnam-k.me/" class="button-link" target="_blank">Live</a>
+                    <a href="https://github.com/shab-k/myportfolio" class="button-link" target="_blank">Github</a>
+                  </div>
+                </div>
+              </div>
+ 
+              <div class="col-lg-6">
+                <div class="card p-two">
+                  <div class="text-center">
+                    <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Project-2</h5>
+                    <p class="card-text">A <a href="https://shab-k.github.io/myvuepress/blog/"
+                        target="_blank">Vuepress</a> blog built with:</p>
+                    <p>Vue.js | Vuepress | Materialize CSS</p>
+                    <a href="https://shab-k.github.io/myvuepress/blog/" class="button-link" target="_blank">Live</a>
+                    <a href="https://github.com/shab-k/myvuepress" class="button-link" target="_blank">Github</a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-6">
+                <div class="card p-one">
+                  <div class="text-center">
+                    <i class="fas fa-calendar-check fa-4x" style="color:#51393C"></i>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Project-1</h5>
+                    <p class="card-text">A<a href="/materialize-project/index.html" target="_blank"> personal
+                        website</a> built with:</p>
+                    <p>HTML5 | Materialize CSS | JavaScript</p>
+                    <a href="/materialize-project/index.html" class="button-link" target="_blank">Live</a>
+                    <a href="https://github.com/shab-k/myportfolio/tree/master/dist/materialize-project"
+                      class="button-link" target="_blank">Github</a>
+                  </div>
+                </div>
+              </div>
+       
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </section>
-    <!-- Footer -->
-    <footer id="contact" class="page-footer bg-dark center">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 sm-12 text-center">
-              <h3 class="white-text contacts">Contact Me</h3>
-            </div>
-            <div class="col-lg-4 sm-12 text-center">
-                <hr class="line">
-            </div>
-            <div class="col-lg-4 sm-12 text-center contact">
-                    <a href="https://ca.linkedin.com/in/shabnamkimiai" class="contact-icon"><i class="fab fa-linkedin fa-3x" style="color:#d2d0d8"></i></a>
-                    <a href="https://github.com/shab-k" class="contact-icon"><i class="fab fa-github-square fa-3x" style="color:#d2d0d8"></i></a>
-                    <button type="button" class="btn contact-icon" data-toggle="tooltip" data-placement="bottom" title="Shab.k.web [at] gmail">
-                       <i class="fas fa-envelope-square fa-3x" style="color:#d2d0d8"></i>
-                   </button>
-            </div>
-                <div class="col-lg-4 sm-12 text-center">
-                    <hr class="line">
-                </div>
-          </div>
-        <div class="container">
-            <div class="footer-copyright footer-dark bg-dark text-center">
-                <div class="container center-align"><i class="far fa-copyright"></i> Made With <i class="fas fa-heart" style="color:#a5043a"></i> By Shabnam</div>
-            </div>
+  </section>
+  <!-- Footer -->
+  <footer id="contact" class="page-footer bg-dark center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 sm-12 text-center">
+          <h3 class="white-text contacts">Contact Me</h3>
         </div>
+        <div class="col-lg-4 sm-12 text-center">
+          <hr class="footer__line">
         </div>
-      </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-      $(function () {
+        <div class="col-lg-4 sm-12 text-center contact">
+          <a href="https://ca.linkedin.com/in/shabnamkimiai" class="contact-icon"><i class="fab fa-linkedin fa-3x"
+              style="color:#d2d0d8"></i></a>
+          <a href="https://github.com/shab-k" class="contact-icon"><i class="fab fa-github-square fa-3x"
+              style="color:#d2d0d8"></i></a>
+          <button type="button" class="btn contact-icon" data-toggle="tooltip" data-placement="bottom"
+            title="shab.k.web [at] gmail">
+            <i class="fas fa-envelope-square fa-3x" style="color:#d2d0d8"></i>
+          </button>
+        </div>
+        <div class="col-lg-4 sm-12 text-center">
+          <hr class="footer__line">
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-copyright footer-dark bg-dark text-center">
+          <div class="container center-align"><i class="far fa-copyright"></i> Made With <i class="fas fa-heart"
+              style="color:#a5043a"></i> By Shabnam</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
