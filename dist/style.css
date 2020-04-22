@@ -60,7 +60,7 @@ span {
     border: 3px dashed #4e4142;
 }
 .card-img-top {
-    height: 220px;
+    max-height: 220px;
 }
 /* .p-one {
     padding-bottom: 10px;
