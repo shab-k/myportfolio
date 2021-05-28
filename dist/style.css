@@ -81,7 +81,7 @@ div.col-lg-6 {
 }
 
 .card {
-    margin: 20px;
+    margin: 30px auto;
     width: 90%;
     height: 100%;
     background-color: transparent;
@@ -121,7 +121,7 @@ h5 span {
 }
 
 .card-title {
-    /* padding-top: 0px; */
+    padding: 10px 20px;
     color: #0093B7;
     color: #4e4e4e;
     font-weight: bold;
@@ -129,13 +129,14 @@ h5 span {
 
 .card-text {
     text-align: justify;
-    padding: 20px;
+    padding: 0 20px;
     padding-bottom: 0;
 }
 
 .card-body {
     border-top: 2px solid #4e4142;
     padding-bottom: 0;
+    height: 215px;
 }
 
 .footer__line {
@@ -158,13 +159,14 @@ h5 span {
 
 .button-link {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 40px;
     margin: 0 10px;
     text-align: center;
     font-weight: 700;
     color: #0093B7;
     background-color: #ebe5eb;
     border: 3px solid #0093B7;
+    border-radius: 50px;
     -webkit-transition: background 400ms, color 400ms;
     -o-transition: background 400ms, color 400ms;
     transition: background 400ms, color 400ms;
